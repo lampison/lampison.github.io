@@ -1,13 +1,231 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lampison Lamp — Light between past and future</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Lampison Lamp — Light between past and future">
+    <link rel="canonical" href="https://lampison.com">
+
+    <meta property="og:title" content="Lampison Lamp" />
+    <meta property="og:url" content="https://lampison.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Lampison Lamp" />
+    <meta property="og:image" content="https://lampison.com/logo-small.png">
+    <meta property="og:description" content="Light between past and future">
+    <meta property="og:title" content="Lampison Lamp">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@xplanehu">
+    <meta name="twitter:title" content="Lampison Lamp">
+    <meta name="twitter:description" content="Light between past and future">
+    <meta name="twitter:image" content="https://lampison.com/logo-small.png">
+    <meta name="twitter:url" content="https://lampison.com/">
+
+
     <style>
-      body {
-        text-align: center;
+
+      @font-face {
+        font-family: "Ciutadella Rounded Bold Italic";
+        src: url("Ciutadella Rounded Bold Italic.ttf");
+        font-weight: bold;
       }
-      img { max-width: 100% }
+      @font-face {
+        font-family: "Ciutadella Rounded Bold";
+        src: url("Ciutadella Rounded Bold.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Italic";
+        src: url("Ciutadella Rounded Italic.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Light Italic";
+        src: url("Ciutadella Rounded Light Italic.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Light";
+        src: url("Ciutadella Rounded Light.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Medium Italic";
+        src: url("Ciutadella Rounded Medium Italic.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Medium";
+        src: url("Ciutadella Rounded Medium.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Semi Bold Italic";
+        src: url("Ciutadella Rounded Semi Bold Italic.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded Semi Bold";
+        src: url("Ciutadella Rounded Semi Bold.ttf");
+        font-weight: bold;
+      }
+      @font-face {
+        font-family: "Ciutadella Rounded";
+        src: url("Ciutadella Rounded.ttf");
+        font-weight: bold;
+      }
+
+      @media only screen and (max-width: 945px) {
+        html header::before, html header::after, html footer::before, html footer::after {
+          display: none;
+        }
+      }
+
+      body, html {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Ciutadella Rounded";
+      }
+
+      body {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+      }
+      h1 {
+        font-family: "Ciutadella Rounded Medium Italic";
+        font-size: 2rem;
+        margin-top: 4.5rem;
+      }
+      article p {
+        font-size: 1.4rem;
+      }
+      img {
+        max-width: 100%;
+      }
+      header, footer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+      }
+      header::before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30%;
+        height: 383px;
+        background-color: black;
+        top: 24px;
+        left: 70%;
+        z-index: 0;
+      }
+      header::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30%;
+        height: 383px;
+        background-color: black;
+        top: 24px;
+        right: 70%;
+        z-index: 0;
+      }
+      footer::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30%;
+        height: 231px;
+        background-color: black;
+        top: 225px;
+        left: 70%;
+        z-index: 0;
+      }
+      footer::after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 30%;
+        height: 231px;
+        background-color: black;
+        top: 225px;
+        right: 70%;
+        z-index: 0;
+      }
+      header img, footer img {
+        position: relative;
+        z-index: 10;
+      }
+
+      main {
+        max-width: 945px;
+        margin: 5rem auto;
+      }
+
+      main article {
+        padding: 0;
+        margin: 0 50px;
+      }
+
+      .contact {
+        text-transform: uppercase;
+        font-size: min(max(5px, 2vw), 22px);
+        margin-top: -3%;
+        text-decoration: none;
+        color: black
+      }
+
+      aside {
+        width: 100%;
+        max-width: 945px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: space-between;
+        justify-content: space-between;
+        position: relative;
+        z-index: 15;
+      }
+      #email {
+        margin-left: 8.9%;
+      }
+
+      #insta {
+        margin-right: 8.9%;
+      }
     </style>
   </head>
   <body>
-    <img src="lampison-logo.png" alt="Lampison" />
+    <header>
+      <img src="lampison_com_HEADER_02.svg" alt="Lampison" />
+      <aside>
+        <a href="mailto:hello@lampison.com" class="contact" id="email">hello@lampison.com</a>
+        <a href="https://instagram.com/_lampison" class="contact" id="insta">@_lampsion</a>
+      </aside>
+    </header>
+    
+    <main>
+      <article>
+        <h1>„Lampison Lamp — Fény múlt és jövő között”</h1>
+        <p>Amikor ránézel egy régi tárgyra, néha visszanéz, és megszólít. Megidéz egy emléket, és hirtelen felvillan a múltad egy elfeledett darabja. Érte nyúlsz és megérinted… </p>
+        <p>Szeretem ezeket a pillanatokat és gyűjtöm ezeket a tárgyakat. Amikor lámpákat építek belőlük, bízom benne, hogy tovább őrzik az előttünk járók keze nyomát, és a körülöttünk lévő sötétségben fényükkel megadják majd a reményt, nem vagyunk egyedül.</p>
+      </article>
+
+      <article>
+        <h1>'Lampison Lamp — Light between past and future'</h1>
+        <p>Sometimes when you look at an ancient object, it looks back and calls out to you. It evokes a memory and suddenly a lost piece of past lights up. You reach for it, you touch it… </p>
+        <p>I love such moments, I collect such objects. When I build lamps from them, I rely on them preserving the work of our predecessors and giving hope in our darkness, proclaiming: You are not alone. </p>
+      </article>
+    </main>
+    <footer>
+      <img src="lampison_com_FOOTER_02.svg" alt="Lampison" />
+    </footer>
   </body>
 </html>
